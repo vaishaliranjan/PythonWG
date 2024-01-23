@@ -1,0 +1,5 @@
+2024-01-20 21:05:22,944 DEBUG    [Logging.py:5] : This will not show up
+2024-01-20 21:05:22,944 INFO     [Logging.py:6] : This will not show up too
+2024-01-20 21:05:22,944 WARNING  [Logging.py:7] : This will show up
+2024-01-20 21:05:22,944 ERROR    [Logging.py:8] : This will show up too
+2024-01-20 21:05:22,944 CRITICAL [Logging.py:9] : This will show up tooooo
