@@ -1,0 +1,33 @@
+XUnit Style setup/teardown func will execute code before and after:
+1. Test Module
+def setup_module()
+def teardown_module()
+
+2. Test Functions
+def setup_function()
+def teardown_function()
+
+3. Test Classes
+def setup_class()
+def teardown_class()
+
+4. Test Methods in Test Classes
+def setup_method()
+def teardown_methods()
+
+
+Test Fixtures can be made using decorator pytest.fixtures and use it using the func param or decorator
+pytest.mark.usefixtures("function name") -> we cau set it to autouse for every test case
+
+for test fictures teardown -
+1.yield keyword the content after yield will be run after the func executed
+2. AddFinalizer- def fun: content request.addfinalizer(fun) diff between yield -only one and in add finalizer we can
+have multiple teardown
+
+Test fixture can have different scope which decides how often it should be called:
+1. Function- once each test
+2. Class- once each class
+3. Module- once each module
+4. Sesseion - once when pytest starts
+
+Assert- Approx for fractional floating value and for exception with raises(exception): then call the func inside
